@@ -1,7 +1,7 @@
 import serial
 import time
 
-# Abrir puerto serie (COM20 a 115200 baudios, 8N1)
+# Abrir puerto serie (COM20 a 115200 baudios, 8N1), puede cambiar de acuerdo al puerto 
 ser = serial.Serial('COM20', 115200, timeout=1)  # En Linux, seria '/dev/ttyUSB0' pero no lo pude aplicar
 
 
