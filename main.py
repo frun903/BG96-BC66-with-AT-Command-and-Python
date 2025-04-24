@@ -1,9 +1,9 @@
 import serial
 import time
 
-# Abrir puerto serie (COM20 a 115200 baudios, 8N1), puede cambiar de acuerdo al puerto 
+# Abrir puerto serie (COM20 a 115200 baudios, 8N1)
 ser = serial.Serial('COM20', 115200, timeout=1)  # En Linux, seria '/dev/ttyUSB0' pero no lo pude aplicar
-
+#En mi experiecia 27, 14,20 suelen ser los mas utilizados 
 
 # Dar al módem algo de tiempo para reiniciarse o responder, esto es opcional pero con la 
 # ESP-01s y el wifi fue mejor hacerlo 
