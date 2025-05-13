@@ -4,7 +4,7 @@
 ## Comandos AT para la BG96-BC66
 
 
-## Proximos Pasos 7/5/2025
+### Revision del 7/5/2025
 Analisis de la profe para proximas entregas:
 
 -  Revisar que sensores aplicar 

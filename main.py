@@ -1,8 +1,6 @@
 import serial
 import time
 
-
-
 #------------------------------------------Abrir Puerto Serial----------------------------------------------------
 # Abrir puerto serie (COM20 a 115200 baudios, 8N1)
 # 27, 14,20 suelen ser los mas utilizados, revisar el administrador de dispositivo si no se conoce 
