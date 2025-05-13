@@ -123,7 +123,7 @@ OK
 
 ```
 
-**Configuración de bandas**
+### **Configuración de bandas**
 Este comando configura 2G en cualquier banda, CatM con B28, y NB-IoT con B4 y B28 
 respectivamente; de no requerir alguna de las tecnologías se puede simplemente suprimir el 
 campo
@@ -131,7 +131,7 @@ campo
 >AT+QCFG="band",f,8000008,8000008
 >OK
 
-**Confugurar Tecnologias**
+### **Confugurar Tecnologias**
 
 AT+QCFG="nwscanmode",3  --> _3 Para LTE con NB/LTE-m_
 OK
@@ -140,14 +140,14 @@ OK
 AT+QCFG="iotopmode",1  --> _Solo para NB-IoT_
 OK
 
-**Riniciamos el Modem BG-96 para afianzar los cambios**
+### **Riniciamos el Modem BG-96 para afianzar los cambios**
 AT+CFUN=0
 OK
 
 AT+CFUN=1
 OK
 
-**Consultar Operador y SIM**
+### **Consultar Operador y SIM**
 AT+CPIN?  --> _Consulta SIM_
 +CPIN: READY
 OK
@@ -157,7 +157,7 @@ AT+COPS?  --> _Consulta Operador_
 OK
 
 
-**Configuracion del APN**
+### **Configuracion del APN**
 
 
 AT+QICSGP=1,1,"iot.claro.com.ar","","",1 --> _Aqui va la APN del Operador_
@@ -172,21 +172,21 @@ AT+QIACT? ---> _Deberiamos ver la IP asignada_
 
 OK
 
-**Prueba hacer ping al servidor**
+### **Prueba hacer ping al servidor**
 
 AT+QPING=1,"test.mosquitto.org"
 
 >[!HELP] Estamos utilizando "https://test.mosquitto.org/" un servidor MQTT publico, con el puerto 1883 que no tiene contraseña ni cifrado mas informacion en su pagina-
 
 
-**Abrimos Socket** 
+###**Abrimos Socket** 
 
 AT+QMTOPEN=0,"test.mosquitto.org",1883
 
 El comando AT+QIOPEN nos permite abrir conexiones tanto TCP como UDP, _en este caso por defecto TCP_.
 
 
-**Nos definimos como cliente MQTT**
+### **Nos definimos como cliente MQTT**
 AT+QMTCONN=0,"clienteBG96
 
 _AT+QMTCONN=<tcpconnectID>,“<clientID>”[,“<username>”[,“<password>”]]_
@@ -197,7 +197,7 @@ _AT+QMTCONN=<tcpconnectID>,“<clientID>”[,“<username>”[,“<password>”]
 <password>        Password corresponding to the user name of the client. It can be used for     
 
 
-**Publicamos Mensajes**
+### **Publicamos Mensajes**
 AT+QMTPUB=0,0,0,0,"ucc/temp",4
 
 AT+QMTPUB=<tcpconnectID>,<msgID>,<qos>,<retain>,“<topic>”
