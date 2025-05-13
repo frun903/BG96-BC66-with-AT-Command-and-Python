@@ -98,3 +98,5 @@ while(True):
                             # ser.write(dato)
     except KeyboardInterrupt:
         print("Programa detenido")
+
+# Puca estuvo Aqui! 

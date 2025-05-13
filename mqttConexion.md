@@ -207,3 +207,4 @@ AT+QMTPUB=<tcpconnectID>,<msgID>,<qos>,<retain>,“<topic>”
 
 **It will be 0 only when <qos>=0 COMO EN ESTA PRUBA**
 
+

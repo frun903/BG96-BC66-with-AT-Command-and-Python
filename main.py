@@ -169,3 +169,6 @@ else:
 #---------------------------------------------Cerrar el Puerto Serie---------------------------
 
 ser.close()
+
+
+# Puca estuvo aqui! 
